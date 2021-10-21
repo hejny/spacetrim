@@ -1,0 +1,27 @@
+{
+  "name": "spacetrim",
+  "version": "0.1.0",
+  "description": "Trimming string from all 4 sides",
+  "sideEffects": false,
+  
+  "main": "./src/spaceTrim.ts",
+  "scripts": {
+    "test": "echo \"!!! Error: no test specified\" && exit 1",
+    "build": "webpack --mode=none"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/how-to-js/webpack-starter.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/how-to-js/webpack-starter/issues"
+  },
+  "homepage": "https://github.com/how-to-js/webpack-starter#readme",
+  "devDependencies": {
+    "webpack": "^5.59.1",
+    "webpack-cli": "^4.8.0"
+  }
+}
