@@ -1,29 +1,33 @@
 {
-  "name": "spacetrim",
-  "version": "0.1.0",
-  "description": "Trimming string from all 4 sides",
-  "sideEffects": false,
-  "main": "./src/spaceTrim.ts",
-  "scripts": {
-    "test": "echo \"!!! Error: no test specified\" && exit 1",
-    "build": "webpack --mode=none"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/how-to-js/webpack-starter.git"
-  },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/how-to-js/webpack-starter/issues"
-  },
-  "homepage": "https://github.com/how-to-js/webpack-starter#readme",
-  "devDependencies": {
-    "@rollup/plugin-typescript": "^8.3.0",
-    "rollup": "^2.58.1",
-    "tslib": "^2.3.1",
-    "typescript": "^4.4.4"
-  },
-  "dependencies": {}
+    "name": "spacetrim",
+    "version": "0.1.0",
+    "description": "Trimming string from all 4 sides",
+    "sideEffects": false,
+    "main": "./dist/spaceTrim.js",
+    "scripts": {
+        "test": "jest",
+        "build": "rollup --config rollup.config.ts",
+        "postversion": "git push && git push --tags"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/how-to-js/webpack-starter.git"
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC",
+    "bugs": {
+        "url": "https://github.com/how-to-js/webpack-starter/issues"
+    },
+    "homepage": "https://github.com/how-to-js/webpack-starter#readme",
+    "devDependencies": {
+        "@rollup/plugin-typescript": "^8.3.0",
+        "@types/jest": "^27.0.2",
+        "jest": "^27.3.1",
+        "rollup": "^2.58.1",
+        "ts-jest": "^27.0.7",
+        "tslib": "^2.3.1",
+        "typescript": "^4.4.4"
+    },
+    "dependencies": {}
 }

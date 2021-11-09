@@ -13,7 +13,6 @@ Spacetrim is trimming string from all 4 sides
 ░░░░░░░░░░░░░░░░░░░░
 ```
 
-
 ## Usage
 
 ```bash
@@ -21,7 +20,7 @@ npm i spacetrim
 ```
 
 ```typescript
-
+import { spaceTrim } from 'spacetrim';
 
 const trimmed = spaceTrim(`
         
@@ -32,9 +31,9 @@ const trimmed = spaceTrim(`
         
         `);
 
+console.log(trimmed);
+
 /*Hello
 Space
 Trim*/
-console.log(trimmed);
-
 ```
