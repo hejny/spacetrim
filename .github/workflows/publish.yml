@@ -64,6 +64,8 @@ jobs:
               with:
                   node-version: 14
                   registry-url: https://npm.pkg.github.com/
+              # Note: ...
+            - run: "sed -i -e 's/\\\"name\\\"\\: \\\"spacetrim\\\"/\\\"name\\\": \\\"\\@hejny\\/spacetrim\\\"/g' ./package.json"
             - run: npm publish
               env:
                   NODE_AUTH_TOKEN: ${{secrets.GITHUB_TOKEN}}
