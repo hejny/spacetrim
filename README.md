@@ -1,6 +1,7 @@
 # ✂️ Space trim
 
-Spacetrim is trimming string from all 4 sides
+Spacetrim is trimming string from all 4 sides.<br/>
+It is very helpfull to keep pretty code indentation without keeping strange spaces inside strings.
 
 ```
 ░░░░░░░░░░░░░
@@ -23,12 +24,12 @@ npm i spacetrim
 import { spaceTrim } from 'spacetrim';
 
 const trimmed = spaceTrim(`
-        
+
                 Hello
                 Space
                 Trim
-        
-        
+
+
         `);
 
 console.log(trimmed);

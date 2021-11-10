@@ -3,10 +3,12 @@
     "version": "0.4.3",
     "description": "Trimming string from all 4 sides",
     "sideEffects": false,
-    "main": "./dist/spaceTrim.js",
+    "module": "./dist/esm/spaceTrim.js",
+    "main": "./dist/umd/spaceTrim.js",
+    "typings": "./dist/esm/typings/spaceTrim.d.ts",
     "scripts": {
         "test": "jest",
-        "build": "rollup --config rollup.config.ts",
+        "build": "rm -rf ./dist && rollup --config rollup.config.ts",
         "postversion": "git push && git push --tags"
     },
     "repository": {
