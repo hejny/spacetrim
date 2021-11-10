@@ -54,7 +54,7 @@ jobs:
               env:
                   NODE_AUTH_TOKEN: ${{secrets.NPM_TOKEN}}
 
-    publish-npm:
+    publish-github:
         name: Publish on GitHub package registry
         needs: build
         runs-on: ubuntu-latest
