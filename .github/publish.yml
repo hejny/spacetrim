@@ -1,4 +1,4 @@
-name: Space trim Package
+name: Publish
 
 on:
     release:
@@ -6,6 +6,7 @@ on:
 
 jobs:
     build:
+        name: Build
         runs-on: ubuntu-latest
         steps:
             - uses: actions/checkout@v2
@@ -17,6 +18,7 @@ jobs:
             - run: npm build
 
     publish-npm:
+        name: Publish to NPM package registry
         needs: build
         runs-on: ubuntu-latest
         steps:
