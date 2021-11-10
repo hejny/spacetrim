@@ -19,13 +19,11 @@ jobs:
               env:
                   GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
               with:
-                  # !!!
                   tag_name: ${{ github.ref }}
-                  release_name: Release ${{ github.ref }}.
+                  release_name: Release ${{ github.ref }}
+                  # TODO: Figure out how to automate meaningfull body
                   body: |
-                      Changes in this Release
-                      - First Change
-                      - Second Change
+                      Release ${{ github.ref }}
                   draft: false
                   prerelease: false
     build:
@@ -56,7 +54,7 @@ jobs:
 
     publish-github:
         name: Publish on GitHub package registry
-        needs: build
+        needs: publish-npm # Note: Normally this can in parallel with publish-npm and needs just build, but we need to do here awful [1] changes which can be dangerous
         runs-on: ubuntu-latest
         steps:
             - uses: actions/checkout@v2
@@ -64,8 +62,8 @@ jobs:
               with:
                   node-version: 14
                   registry-url: https://npm.pkg.github.com/
-              # Note: ...
-            - run: "sed -i -e 's/\\\"name\\\"\\: \\\"spacetrim\\\"/\\\"name\\\": \\\"\\@hejny\\/spacetrim\\\"/g' ./package.json"
+              # Note: This is an awful [1] solution to publish this package as "foo" on NPM and "@hejny/foo" on GitHub
+            - run: "sed -i -e 's/\\\"name\\\"\\: \\\"/\\\"name\\\": \\\"\\@hejny\\//g' ./package.json"
             - run: npm publish
               env:
                   NODE_AUTH_TOKEN: ${{secrets.GITHUB_TOKEN}}
