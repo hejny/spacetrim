@@ -11,15 +11,15 @@
     },
     "repository": {
         "type": "git",
-        "url": "git+https://github.com/how-to-js/webpack-starter.git"
+        "url": "git+https://github.com/hejny/spacetrim.git"
     },
     "keywords": [],
     "author": "",
     "license": "ISC",
     "bugs": {
-        "url": "https://github.com/how-to-js/webpack-starter/issues"
+        "url": "https://github.com/hejny/spacetrim/issues"
     },
-    "homepage": "https://github.com/how-to-js/webpack-starter#readme",
+    "homepage": "https://github.com/hejny/spacetrim#readme",
     "devDependencies": {
         "@rollup/plugin-typescript": "^8.3.0",
         "@types/jest": "^27.0.2",
