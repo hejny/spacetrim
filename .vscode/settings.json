@@ -1,6 +1,6 @@
 {
     "files.eol": "\n",
-    "jestrunner.jestCommand": "npm run test --",
+    "jestrunner.jestCommand": "npx jest",
     "editor.formatOnSave": true,
     "prettier.configPath": ".prettierrc",
     "editor.defaultFormatter": "esbenp.prettier-vscode",
