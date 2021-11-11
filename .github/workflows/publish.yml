@@ -36,7 +36,7 @@ jobs:
                   node-version: 14
             - run: npm ci
             - run: npm test
-            - run: npm build
+            - run: npm run build
 
     publish-npm:
         name: Publish on NPM package registry
