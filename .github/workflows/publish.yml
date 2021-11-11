@@ -6,8 +6,20 @@ on:
             - 'v*'
 
 jobs:
+    test:
+        name: Test
+        runs-on: ubuntu-latest
+        steps:
+            - uses: actions/checkout@v2
+            - uses: actions/setup-node@v1
+              with:
+                  node-version: 14
+            - run: npm ci
+            - run: npm test
+
     release:
         name: Create Release
+        needs: test
         runs-on: ubuntu-latest
         steps:
             - name: Checkout code
@@ -26,21 +38,10 @@ jobs:
                       Release ${{ github.ref }}
                   draft: false
                   prerelease: false
-    build:
-        name: Build
-        runs-on: ubuntu-latest
-        steps:
-            - uses: actions/checkout@v2
-            - uses: actions/setup-node@v1
-              with:
-                  node-version: 14
-            - run: npm ci
-            - run: npm test
-            - run: npm run build
 
     publish-npm:
         name: Publish on NPM package registry
-        needs: build
+        needs: release
         runs-on: ubuntu-latest
         steps:
             - uses: actions/checkout@v2
@@ -48,13 +49,15 @@ jobs:
               with:
                   node-version: 14
                   registry-url: https://registry.npmjs.org/
+            - run: npm ci
+            - run: npm run build
             - run: npm publish
               env:
                   NODE_AUTH_TOKEN: ${{secrets.NPM_TOKEN}}
 
     publish-github:
         name: Publish on GitHub package registry
-        needs: publish-npm # Note: Normally this can in parallel with publish-npm and needs just build, but we need to do here awful [1] changes which can be dangerous
+        needs: release
         runs-on: ubuntu-latest
         steps:
             - uses: actions/checkout@v2
@@ -62,8 +65,10 @@ jobs:
               with:
                   node-version: 14
                   registry-url: https://npm.pkg.github.com/
-              # Note: This is an awful [1] solution to publish this package as "foo" on NPM and "@hejny/foo" on GitHub
+              # Note: This is an awful solution to publish this package as "foo" on NPM and "@hejny/foo" on GitHub
             - run: "sed -i -e 's/\\\"name\\\"\\: \\\"/\\\"name\\\": \\\"\\@hejny\\//g' ./package.json"
+            - run: npm ci
+            - run: npm run build
             - run: npm publish
               env:
                   NODE_AUTH_TOKEN: ${{secrets.GITHUB_TOKEN}}
