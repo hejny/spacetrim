@@ -1,5 +1,7 @@
 # ✂️ Space trim
 
+[![Test + Lint](https://github.com/hejny/spacetrim/actions/workflows/test+lint.yml/badge.svg)](https://github.com/hejny/spacetrim/actions/workflows/test+lint.yml)
+
 Spacetrim is trimming string from all 4 sides.<br/>
 It is very helpfull to keep pretty code indentation without keeping strange spaces inside strings.
 
