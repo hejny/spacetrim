@@ -26,6 +26,7 @@ export function spaceTrim(
     }
 
     const { minContentStart, maxContentEnd } = lineStats.reduce(
+        // tslint:disable-next-line: no-shadowed-variable
         ({ minContentStart, maxContentEnd }, { contentStart, contentEnd }) => ({
             minContentStart: Math.min(minContentStart, contentStart),
             maxContentEnd: Math.max(maxContentEnd, contentEnd),
