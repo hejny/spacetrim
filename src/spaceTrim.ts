@@ -1,57 +1,44 @@
+import { verticalTrim } from './verticalTrim';
+
 export default spaceTrim;
 
 export function spaceTrim(
     str: string /* TODO: , char: RegExp = /\s/*/,
 ): string {
     // ✂️ Trimming from top and bottom
-    str = spaceTrimFromTop(str);
-    str = spaceTrimFromTop(str.split('\n').reverse().join('\n'))
-        .split('\n')
-        .reverse()
-        .join('\n');
+    str = verticalTrim(str);
 
     // ✂️ Trimming from left and right
-    let minStartWhitespaceLength: null | number = null;
-    let maxContentLength: number = 0;
+
     const lines = str.split('\n');
 
-    for (const line of lines) {
-        const { startWhitespace, content } = line.match(
-            /^(?<startWhitespace>\s*)(?<content>.*?)(\s*)$/,
-        )!.groups as any;
+    const lineStats = lines
+        .filter((line) => line.trim() !== '')
+        .map((line) => {
+            const contentStart = line.length - line.trimLeft().length;
+            const contentEnd = contentStart + line.trim().length;
 
-        minStartWhitespaceLength = Math.min(
-            minStartWhitespaceLength || 99999999999999,
-            startWhitespace.length,
-        );
-        maxContentLength = Math.max(maxContentLength, content.length);
+            return { contentStart, contentEnd };
+        });
+
+    if (lineStats.length === 0) {
+        return '';
     }
+
+    const { minContentStart, maxContentEnd } = lineStats.reduce(
+        ({ minContentStart, maxContentEnd }, { contentStart, contentEnd }) => ({
+            minContentStart: Math.min(minContentStart, contentStart),
+            maxContentEnd: Math.max(maxContentEnd, contentEnd),
+        }),
+        {
+            minContentStart: lineStats[0].contentStart,
+            maxContentEnd: lineStats[0].contentEnd,
+        },
+    );
+
     str = lines
-        .map((line) =>
-            line.substring(
-                minStartWhitespaceLength!,
-                minStartWhitespaceLength! + maxContentLength,
-            ),
-        )
+        .map((line) => line.substring(minContentStart, maxContentEnd))
         .join('\n');
 
     return str;
-}
-
-export function spaceTrimFromTop(str: string): string {
-    const linesWithContent: string[] = [];
-    let contentStarted = false;
-
-    const lines = str.split('\n');
-    for (const line of lines) {
-        if (line.trim() !== '') {
-            contentStarted = true;
-        }
-
-        if (contentStarted) {
-            linesWithContent.push(line);
-        }
-    }
-
-    return linesWithContent.join('\n');
 }
