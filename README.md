@@ -1,6 +1,7 @@
 # ✂️ Space trim
 
-[![Package Quality](https://packagequality.com/badge/spacetrim.png)](https://packagequality.com/#?package=spacetrim)
+
+[![Package Quality](https://packagequality.com/shield/spacetrim.svg)](https://packagequality.com/#?package=spacetrim)
 [![NPM Version](https://badge.fury.io/js/spacetrim.svg)](https://www.npmjs.com/package/spacetrim)
 [![Test](https://github.com/hejny/spacetrim/actions/workflows/test.yml/badge.svg)](https://github.com/hejny/spacetrim/actions/workflows/test.yml)
 [![Lint](https://github.com/hejny/spacetrim/actions/workflows/lint.yml/badge.svg)](https://github.com/hejny/spacetrim/actions/workflows/lint.yml)
