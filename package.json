@@ -1,6 +1,6 @@
 {
     "name": "spacetrim",
-    "version": "0.6.1",
+    "version": "0.6.2",
     "description": "Trimming string from all 4 sides",
     "sideEffects": false,
     "module": "./dist/esm/spaceTrim.js",
