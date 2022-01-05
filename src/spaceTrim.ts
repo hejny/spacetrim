@@ -51,13 +51,13 @@ export function spaceTrim(
 
     if (isFunctional) {
         linesHorizontalyTrimmed = linesHorizontalyTrimmed.map((line) => {
-            const lines = line.split('__NEWLINE__');
-            const firstLine = lines[0];
+            const sublines = line.split('__NEWLINE__');
+            const firstSubine = sublines[0];
             const contentStart =
-                firstLine.length - firstLine.trimStart().length;
+                firstSubine.length - firstSubine.trimStart().length;
             const indentation = ' '.repeat(contentStart);
-            return lines
-                .map((line) => `${indentation}${line.trimStart()}`)
+            return sublines
+                .map((subline) => `${indentation}${subline.trimStart()}`)
                 .join('\n');
         });
     }
