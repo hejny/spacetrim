@@ -1,9 +1,9 @@
 
-export function topTrim(str: string): string {
+export function topTrim(content: string): string {
   const linesWithContent: string[] = [];
   let contentStarted = false;
 
-  const lines = str.split('\n');
+  const lines = content.split('\n');
   for (const line of lines) {
     if (line.trim() !== '') {
       contentStarted = true;

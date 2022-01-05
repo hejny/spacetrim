@@ -3,19 +3,27 @@ import { verticalTrim } from './verticalTrim';
 export default spaceTrim;
 
 export function spaceTrim(
-    str: string /* TODO: , char: RegExp = /\s/*/,
+    content: string | ((block: (blockContent: string) => string) => string),
 ): string {
+    let isFunctional = false;
+    if (typeof content === 'function') {
+        isFunctional = true;
+        content = content((blockContent: string) =>
+            blockContent.split('\n').join('__NEWLINE__'),
+        );
+    }
+
     // ✂️ Trimming from top and bottom
-    str = verticalTrim(str);
+    content = verticalTrim(content);
 
     // ✂️ Trimming from left and right
 
-    const lines = str.split('\n');
+    const lines = content.split('\n');
 
     const lineStats = lines
         .filter((line) => line.trim() !== '')
         .map((line) => {
-            const contentStart = line.length - line.trimLeft().length;
+            const contentStart = line.length - line.trimStart().length;
             const contentEnd = contentStart + line.trim().length;
 
             return { contentStart, contentEnd };
@@ -37,9 +45,26 @@ export function spaceTrim(
         },
     );
 
-    str = lines
-        .map((line) => line.substring(minContentStart, maxContentEnd))
-        .join('\n');
+    let linesHorizontalyTrimmed = lines.map((line) =>
+        line.substring(minContentStart, maxContentEnd),
+    );
 
-    return str;
+    if (isFunctional) {
+        linesHorizontalyTrimmed = linesHorizontalyTrimmed.map((line) => {
+            const lines = line.split('__NEWLINE__');
+            const firstLine = lines[0];
+            const contentStart =
+                firstLine.length - firstLine.trimStart().length;
+            const indentation = ' '.repeat(contentStart);
+            return lines
+                .map((line) => `${indentation}${line.trimStart()}`)
+                .join('\n');
+        });
+    }
+
+    return linesHorizontalyTrimmed.join('\n');
 }
+
+/**
+ *  TODO: Allow to change split char , char: RegExp = /\s/
+ */

@@ -1,12 +1,12 @@
 import { topTrim } from "./topTrim";
 
-export function verticalTrim(str: string): string {
-    str = topTrim(str);
-    str = topTrim(str.split('\n').reverse().join('\n'))
+export function verticalTrim(content: string): string {
+    content = topTrim(content);
+    content = topTrim(content.split('\n').reverse().join('\n'))
         .split('\n')
         .reverse()
         .join('\n');
-    return str;
+    return content;
 }
 
 
