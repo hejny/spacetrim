@@ -1,5 +1,18 @@
 # ✂️ Space trim
 
+<!--Badges-->
+
+ [![Package Quality](https://packagequality.com/shield/spacetrim.svg)](https://packagequality.com/#?package=spacetrim)
+ [![License](https://img.shields.io/github/license/hejny/spacetrim.svg?style=flat)](https://raw.githubusercontent.com/hejny/spacetrim/master/LICENSE)
+ [![NPM Version](https://badge.fury.io/js/@hejny%2Fspacetrim.svg)](https://www.npmjs.com/package/@hejny/spacetrim)
+ [![undefined](https://github.com/hejny/spacetrim/actions/workflows/lint.yml/badge.svg)](https://github.com/hejny/spacetrim/actions/workflows/lint.yml.yml)
+ [![undefined](https://github.com/hejny/spacetrim/actions/workflows/publish.yml/badge.svg)](https://github.com/hejny/spacetrim/actions/workflows/publish.yml.yml)
+ [![undefined](https://github.com/hejny/spacetrim/actions/workflows/test.yml/badge.svg)](https://github.com/hejny/spacetrim/actions/workflows/test.yml.yml)
+ [![Known Vulnerabilities](https://snyk.io/test/github/hejny/spacetrim/badge.svg)](https://snyk.io/test/github/hejny/spacetrim)
+ [![Issues](https://img.shields.io/github/issues/hejny/spacetrim.svg?style=flat)](https://github.com/hejny/spacetrim/issues)
+
+<!--/Badges-->
+
 [![Package Quality](https://packagequality.com/shield/spacetrim.svg)](https://packagequality.com/#?package=spacetrim)
 [![NPM Version](https://badge.fury.io/js/spacetrim.svg)](https://www.npmjs.com/package/spacetrim)
 [![Test](https://github.com/hejny/spacetrim/actions/workflows/test.yml/badge.svg)](https://github.com/hejny/spacetrim/actions/workflows/test.yml)
