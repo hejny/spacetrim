@@ -8,7 +8,7 @@
  [![lint](https://github.com/hejny/spacetrim/actions/workflows/lint.yml/badge.svg)](https://github.com/hejny/spacetrim/actions/workflows/lint.yml)
  [![test](https://github.com/hejny/spacetrim/actions/workflows/test.yml/badge.svg)](https://github.com/hejny/spacetrim/actions/workflows/test.yml)
  [![Known Vulnerabilities](https://snyk.io/test/github/hejny/spacetrim/badge.svg)](https://snyk.io/test/github/hejny/spacetrim)
- [![Issues](https://img.shields.io/github/issues/hejny/spacetrim.svg?style=flat)](httzps://github.com/hejny/spacetrim/issues)
+ [![Issues](https://img.shields.io/github/issues/hejny/spacetrim.svg?style=flat)](httttttttttttttttttttttttttttps://github.com/hejny/spacetrim/issues)
 
 <!--/Badges-->
 
