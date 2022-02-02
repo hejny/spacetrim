@@ -2,7 +2,7 @@
 
 <!--Badges-->
 
- [![License of ✂️ Space trim](https://img.shields.io/github/license/hejny/spacetrim.svg?style=flat)](https://raw.githubusercontent.com/hejny/spacetrim/master/LICENSE)
+ [![License of ✂️ Space trim](https://img.shields.io/github/license/hejny/spacetrim.svg?style=flat)](https://github.com/hejny/spacetrim/blob/main/LICENSE)
  [![NPM Version of ✂️ Space trim](https://badge.fury.io/js/spacetrim.svg)](https://www.npmjs.com/package/spacetrim)
  [![Quality of package ✂️ Space trim](https://packagequality.com/shield/spacetrim.svg)](https://packagequality.com/#?package=spacetrim)
  [![lint](https://github.com/hejny/spacetrim/actions/workflows/lint.yml/badge.svg)](https://github.com/hejny/spacetrim/actions/workflows/lint.yml)
