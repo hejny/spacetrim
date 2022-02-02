@@ -13,7 +13,7 @@
 <!--/Badges-->
 
 Spacetrim is trimming string from all 4 sides.<br/>
-It is very helpfull to keep pretty code indentation without keeping strange spaces inside strings.
+It is very helpful to keep pretty code indentation without keeping strange spaces inside strings.
 
 ```
 ░░░░░░░░░░░░░
@@ -51,7 +51,7 @@ Space
 Trim*/
 ```
 
-_See more examples in [simple spaceTrim tests](./src/spaceTrim.test.ts)._
+_See more examples in [simple tests](./src/spaceTrim.test.ts)._
 
 ## Nesting
 
@@ -88,7 +88,7 @@ _See more examples in [nesting tests](./src/nesting.test.ts)._
 
 ## 🖋️ Contributing
 
-I am opened to pull requests, feedback and suggestions. Or if you like this utility, you can [☕ buy me a coffee](https://www.buymeacoffee.com/hejny) or [donate via cryptocurrencies](https://github.com/hejny/hejny/blob/main/documents/crypto.md)
+I am open to pull requests, feedback, and suggestions. Or if you like this utility, you can [☕ buy me a coffee](https://www.buymeacoffee.com/hejny) or [donate via cryptocurrencies](https://github.com/hejny/hejny/blob/main/documents/crypto.md)
 
 
 ## ✨ Partners
