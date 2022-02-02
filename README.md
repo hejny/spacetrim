@@ -2,8 +2,7 @@
 
 <!--Badges-->
 
- [![Package Quality](https://packagequality.com/shield/spacetrim.svg)](https://packagequality.com/#?package=spacetrim)
- [![License](https://img.shields.io/github/license/hejny/spacetrim.svg?style=flat)](https://raw.githubusercontent.com/hejny/spacetrim/master/LICENSE)
+ [![License of spacetrim](https://img.shields.io/github/license/hejny/spacetrim.svg?style=flat)](https://raw.githubusercontent.com/hejny/spacetrim/master/LICENSE)
  [![lint](https://github.com/hejny/spacetrim/actions/workflows/lint.yml/badge.svg)](https://github.com/hejny/spacetrim/actions/workflows/lint.yml)
  [![test](https://github.com/hejny/spacetrim/actions/workflows/test.yml/badge.svg)](https://github.com/hejny/spacetrim/actions/workflows/test.yml)
  [![Known Vulnerabilities](https://snyk.io/test/github/hejny/spacetrim/badge.svg)](https://snyk.io/test/github/hejny/spacetrim)
