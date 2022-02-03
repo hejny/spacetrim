@@ -37,12 +37,12 @@ import { spaceTrim } from 'spacetrim';
 
 const trimmed = spaceTrim(`
 
-                Hello
-                Space
-                Trim
+Hello
+Space
+Trim
 
 
-        `);
+`);
 
 console.log(trimmed);
 
@@ -61,12 +61,12 @@ This is very usefull when you want to trim multiline strings inside multiline st
 import { spaceTrim } from 'spacetrim';
 
 const trimmed = spaceTrim(
-    (block) => `
+(block) => `
 
-                  Numbers
-                    ${block(['1', '2', '3'].join('\n'))}
-                  Chars
-                       ${block(['A', 'B', 'C'].join('\n'))}
+Numbers
+${block(['1', '2', '3'].join('\n'))}
+Chars
+${block(['A', 'B', 'C'].join('\n'))}
 
 `,
 );
@@ -74,13 +74,13 @@ const trimmed = spaceTrim(
 console.log(trimmed);
 
 /*Numbers
-  1
-  2
-  3
+1
+2
+3
 Chars
-     A
-     B
-     C*/
+A
+B
+C*/
 ```
 
 _See more examples in [nesting tests](./src/nesting.test.ts)._
@@ -95,16 +95,26 @@ I am open to pull requests, feedback, and suggestions. Or if you like this utili
 
 
 <a href="https://Collboard.com/">
-    <img src="https://collboard.fra1.cdn.digitaloceanspaces.com/assets/18.12.1/logo-small.png" alt="Collboard logo" width="50"  />
+<img src="https://collboard.fra1.cdn.digitaloceanspaces.com/assets/18.12.1/logo-small.png" alt="Collboard logo" width="50"  />
 </a>
 &nbsp;&nbsp;&nbsp;
 <a href="https://czech.events/">
-    <img src="https://czech.events/design/logos/czech.events.transparent-logo.png" alt="Czech.events logo" width="50" />
+<img src="https://czech.events/design/logos/czech.events.transparent-logo.png" alt="Czech.events logo" width="50" />
 </a>
 &nbsp;&nbsp;&nbsp;
 <a href="https://sigmastamp.ml/">
-    <img src="https://www.sigmastamp.ml/sigmastamp-logo.white.svg" alt="SigmaStamp logo" width="50"/>
+<img src="https://www.sigmastamp.ml/sigmastamp-logo.white.svg" alt="SigmaStamp logo" width="50"/>
 </a>
 
 
 [Become a partner](https://www.pavolhejny.com/contact/)
+
+
+
+<!--Contributing-->
+
+## 🖋️ Contributing
+
+I am open to pull requests, feedback, and suggestions. Or if you like this utility, you can [☕ buy me a coffee](https://www.buymeacoffee.com/hejny) or [donate via cryptocurrencies](https://github.com/hejny/hejny/blob/main/documents/crypto.md).
+
+<!--/Contributing-->
