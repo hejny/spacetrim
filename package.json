@@ -1,7 +1,7 @@
 {
   "name": "spacetrim",
   "version": "0.8.1",
-  "description": "Trimming string from all 4 sides",
+  "description": "Spacetrim is trimming string from all 4 sides.<br/>\nIt is very helpful to keep pretty code indentation without keeping strange spaces inside strings.",
   "sideEffects": false,
   "module": "./dist/esm/spaceTrim.js",
   "main": "./dist/umd/spaceTrim.js",
