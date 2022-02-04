@@ -15,7 +15,7 @@
 <!--/Badges-->
 
 Spacetrim is trimming string from all 4 sides.<br/>
-It is very helpful to keep pretty code indentation without keeping strange spaces inside strings.
+It is very helpful to keep pretty code indentation without keeping a strange spaces inside a strings.
 
 ```
 ░░░░░░░░░░░░░
