@@ -14,7 +14,7 @@
       "focus": true
     },
     {
-      "name": "🔼👑 Release major version",
+      "name": "🔼👑  version",
       "command": "npm version major",
       "onlySingle": true,
       "focus": true
