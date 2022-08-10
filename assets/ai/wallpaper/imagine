@@ -1,5 +1,5 @@
 Spacetrim is trimming string from all 4 sides. It is very helpful to keep pretty code indentation without keeping a strange spaces inside a strings.
 --aspect 2:1  --quality 2 --stylize 1250 --version 3
---seed 2776669
+--seed 3118164
 
 Note: All lines bellow (including this) are ignored.
