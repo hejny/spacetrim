@@ -2,31 +2,65 @@
 #       And every first line will be searched during the harvesting phase
 
 Spacetrim is trimming string from all 4 sides. It is very helpful to keep pretty code indentation without keeping a strange spaces inside a strings.
---seed 2028399
-
-Banner for Spacetrim is trimming string from all 4 sides. It is very helpful to keep pretty code indentation without keeping a strange spaces inside a strings.
---seed 2028399
-
-Spacetrim is trimming string from all 4 sides. It is very helpful to keep pretty code indentation without keeping a strange spaces inside a strings.
---hd
---seed 2028399
-
-Banner for Spacetrim is trimming string from all 4 sides. It is very helpful to keep pretty code indentation without keeping a strange spaces inside a strings.
---hd
---seed 2028399
-
-Spacetrim is trimming string from all 4 sides. It is very helpful to keep pretty code indentation without keeping a strange spaces inside a strings.
 --aspect 2:1
---seed 2028399
+--seed 5198140
 
 Banner for Spacetrim is trimming string from all 4 sides. It is very helpful to keep pretty code indentation without keeping a strange spaces inside a strings.
 --aspect 2:1
---seed 2028399
+--seed 5198140
 
 Spacetrim is trimming string from all 4 sides. It is very helpful to keep pretty code indentation without keeping a strange spaces inside a strings.
---hd --aspect 2:1
---seed 2028399
+--aspect 2:1 --hd
+--seed 5198140
 
 Banner for Spacetrim is trimming string from all 4 sides. It is very helpful to keep pretty code indentation without keeping a strange spaces inside a strings.
---hd --aspect 2:1
---seed 2028399
+--aspect 2:1 --hd
+--seed 5198140
+
+Spacetrim is trimming string from all 4 sides. It is very helpful to keep pretty code indentation without keeping a strange spaces inside a strings.
+--aspect 2:1 --quality 2
+--seed 5198140
+
+Banner for Spacetrim is trimming string from all 4 sides. It is very helpful to keep pretty code indentation without keeping a strange spaces inside a strings.
+--aspect 2:1 --quality 2
+--seed 5198140
+
+Spacetrim is trimming string from all 4 sides. It is very helpful to keep pretty code indentation without keeping a strange spaces inside a strings.
+--aspect 2:1 --hd --quality 2
+--seed 5198140
+
+Banner for Spacetrim is trimming string from all 4 sides. It is very helpful to keep pretty code indentation without keeping a strange spaces inside a strings.
+--aspect 2:1 --hd --quality 2
+--seed 5198140
+
+Spacetrim is trimming string from all 4 sides. It is very helpful to keep pretty code indentation without keeping a strange spaces inside a strings.
+--aspect 2:1 --stylize 1250
+--seed 5198140
+
+Banner for Spacetrim is trimming string from all 4 sides. It is very helpful to keep pretty code indentation without keeping a strange spaces inside a strings.
+--aspect 2:1 --stylize 1250
+--seed 5198140
+
+Spacetrim is trimming string from all 4 sides. It is very helpful to keep pretty code indentation without keeping a strange spaces inside a strings.
+--aspect 2:1 --hd --stylize 1250
+--seed 5198140
+
+Banner for Spacetrim is trimming string from all 4 sides. It is very helpful to keep pretty code indentation without keeping a strange spaces inside a strings.
+--aspect 2:1 --hd --stylize 1250
+--seed 5198140
+
+Spacetrim is trimming string from all 4 sides. It is very helpful to keep pretty code indentation without keeping a strange spaces inside a strings.
+--aspect 2:1 --quality 2 --stylize 1250
+--seed 5198140
+
+Banner for Spacetrim is trimming string from all 4 sides. It is very helpful to keep pretty code indentation without keeping a strange spaces inside a strings.
+--aspect 2:1 --quality 2 --stylize 1250
+--seed 5198140
+
+Spacetrim is trimming string from all 4 sides. It is very helpful to keep pretty code indentation without keeping a strange spaces inside a strings.
+--aspect 2:1 --hd --quality 2 --stylize 1250
+--seed 5198140
+
+Banner for Spacetrim is trimming string from all 4 sides. It is very helpful to keep pretty code indentation without keeping a strange spaces inside a strings.
+--aspect 2:1 --hd --quality 2 --stylize 1250
+--seed 5198140
