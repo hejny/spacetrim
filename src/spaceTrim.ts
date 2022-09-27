@@ -9,7 +9,11 @@ export function spaceTrim(
     if (typeof content === 'function') {
         isFunctional = true;
         content = content((blockContent: string) =>
-            blockContent.split('\n').join('__NEWLINE__'),
+            blockContent
+                .split('\n')
+                .join('__NEWLINE__')
+                .split(' ')
+                .join('__SPACE__'),
         );
     }
 
@@ -57,7 +61,13 @@ export function spaceTrim(
                 firstSubine.length - firstSubine.trimStart().length;
             const indentation = ' '.repeat(contentStart);
             return sublines
-                .map((subline) => `${indentation}${subline.trimStart()}`)
+                .map(
+                    (subline) =>
+                        `${indentation}${subline
+                            .trimStart()
+                            .split('__SPACE__')
+                            .join(' ')}`,
+                )
                 .join('\n');
         });
     }
