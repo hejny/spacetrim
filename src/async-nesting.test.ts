@@ -3,7 +3,7 @@ import { spaceTrim } from './spaceTrim';
 // tslint:disable:no-trailing-whitespace
 describe('how nesting works', () => {
     it('will asynchronously nest simple values ', () => {
-        expect(
+        return expect(
             spaceTrim(
                 async (block) => `
 
@@ -11,6 +11,6 @@ describe('how nesting works', () => {
 
                 `,
             ),
-        ).toBe('Hello asynchronous');
+        ).resolves.toBe('Hello asynchronous');
     });
 });

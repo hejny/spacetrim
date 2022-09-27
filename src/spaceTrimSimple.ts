@@ -42,3 +42,4 @@ export function spaceTrimSimple(
 
     return linesHorizontalyTrimmed.join('\n');
 }
+
