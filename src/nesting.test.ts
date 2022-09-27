@@ -56,4 +56,37 @@ describe('how nesting works', () => {
             ].join('\n'),
         );
     });
+
+    it('will preserve aligment of nested blocks', () => {
+        const nested = spaceTrim(`
+        1
+          2
+            3
+      `);
+
+        expect(
+            spaceTrim(
+                (block) => `
+
+                A:
+                  ${block(nested)}
+                B:
+                    ${block(nested)}
+
+
+    `,
+            ),
+        ).toBe(
+            [
+                'A:',
+                '  1',
+                '    2',
+                '      3',
+                'B:',
+                '    1',
+                '      2',
+                '        3',
+            ].join('\n'),
+        );
+    });
 });
