@@ -36,9 +36,9 @@ export function spaceTrimSimple(content: string): string {
         },
     );
 
-    const linesHorizontalyTrimmed = lines.map((line) =>
+    const horizontalyTrimmedLines = lines.map((line) =>
         line.substring(minContentStart, maxContentEnd),
     );
 
-    return linesHorizontalyTrimmed.join('\n');
+    return horizontalyTrimmedLines.join('\n');
 }
