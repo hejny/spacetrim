@@ -1,4 +1,5 @@
 
+// !!! Describe
 export function topTrim(content: string): string {
   const linesWithContent: string[] = [];
   let contentStarted = false;

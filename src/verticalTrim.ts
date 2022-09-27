@@ -1,5 +1,6 @@
-import { topTrim } from "./topTrim";
+import { topTrim } from './topTrim';
 
+// !!! Describe
 export function verticalTrim(content: string): string {
     content = topTrim(content);
     content = topTrim(content.split('\n').reverse().join('\n'))
@@ -8,5 +9,3 @@ export function verticalTrim(content: string): string {
         .join('\n');
     return content;
 }
-
-
