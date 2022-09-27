@@ -109,9 +109,9 @@ import { spaceTrim } from 'spacetrim';
 const trimmed = await spaceTrim(
     async (block) => `
 
-        Article 5:
-            ${await fetch('https://en.wikipedia.org/wiki/NATO').then((result) =>
-                result.text(),
+        TypeScript:
+            ${await fetch('https://en.wikipedia.org/wiki/TypeScript').then(
+                (result) => result.text(),
             )}
 
 
@@ -121,8 +121,8 @@ const trimmed = await spaceTrim(
 console.log(trimmed);
 
 /*
-Article 5:
-    Article 5 of the North Atlantic treaty, requiring member states to come...
+TypeScript:
+    TypeScript is a free and open source programming language...
 */
 ```
 
