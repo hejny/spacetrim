@@ -1,5 +1,7 @@
 
-// !!! Describe
+/**
+ * topTrim trims given string from top
+ */
 export function topTrim(content: string): string {
   const linesWithContent: string[] = [];
   let contentStarted = false;

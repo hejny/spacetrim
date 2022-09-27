@@ -1,9 +1,9 @@
 import { verticalTrim } from './verticalTrim';
 
-// !!! Describe
-export function spaceTrimSimple(
-    content: string
-): string {
+/**
+ * Trimming string from all 4 sides
+ */
+export function spaceTrimSimple(content: string): string {
     // ✂️ Trimming from top and bottom
     content = verticalTrim(content);
 
@@ -36,10 +36,9 @@ export function spaceTrimSimple(
         },
     );
 
-    let linesHorizontalyTrimmed = lines.map((line) =>
+    const linesHorizontalyTrimmed = lines.map((line) =>
         line.substring(minContentStart, maxContentEnd),
     );
 
     return linesHorizontalyTrimmed.join('\n');
 }
-

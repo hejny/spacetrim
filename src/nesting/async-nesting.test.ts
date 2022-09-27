@@ -1,4 +1,4 @@
-import { spaceTrim } from './spaceTrim';
+import { spaceTrim } from '../spaceTrim';
 
 // tslint:disable:no-trailing-whitespace
 describe('how nesting works', () => {
