@@ -6,11 +6,11 @@
 
 [![License of ✂️ Space trim](https://img.shields.io/github/license/hejny/spacetrim.svg?style=flat)](https://github.com/hejny/spacetrim/blob/main/LICENSE)
 [![NPM Version of ✂️ Space trim](https://badge.fury.io/js/spacetrim.svg)](https://www.npmjs.com/package/spacetrim)
-[![Quality of package ✂️ Space trim](https://packagequality.com/shield/spacetrim.svg)](https://packagequality.com/#?package=spacetrim)
+[![lint](https://github.com/hejny/spacetrim/actions/workflows/lint.yml/badge.svg)](https://github.com/hejny/spacetrim/actions/workflows/lint.yml)
+[![test](https://github.com/hejny/spacetrim/actions/workflows/test.yml/badge.svg)](https://github.com/hejny/spacetrim/actions/workflows/test.yml)
 [![Known Vulnerabilities](https://snyk.io/test/github/hejny/spacetrim/badge.svg)](https://snyk.io/test/github/hejny/spacetrim)
 [![Issues](https://img.shields.io/github/issues/hejny/spacetrim.svg?style=flat)](https://github.com/hejny/spacetrim/issues)
-<!--[![lint](https://github.com/hejny/spacetrim/actions/workflows/lint.yml/badge.svg)](https://github.com/hejny/spacetrim/actions/workflows/lint.yml)-->
-<!--[![test](https://github.com/hejny/spacetrim/actions/workflows/test.yml/badge.svg)](https://github.com/hejny/spacetrim/actions/workflows/test.yml)-->
+<!--[![Quality of package ✂️ Space trim](https://packagequality.com/shield/spacetrim.svg)](https://packagequality.com/#?package=spacetrim)-->
 
 <!--/Badges-->
 
