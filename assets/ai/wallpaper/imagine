@@ -2,4 +2,3 @@
 #       And every first line will be searched during the harvesting phase
 
 Spacetrim is trimming string from all 4 sides. It is very helpful to keep pretty code indentation without keeping a strange spaces inside a strings.
---version 4
