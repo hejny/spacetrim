@@ -1,4 +1,4 @@
-import { NEWLINE,SPACE } from "./block-constants";
+import { NEWLINE, SPACE } from "./block-constants";
 
 /**
  * Escapes block content to protect newline and space characters
