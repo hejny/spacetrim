@@ -90,3 +90,7 @@ describe('how nesting works', () => {
         );
     });
 });
+
+/**
+ * TODO: Nesting with bullets (allow to prefix each line of block by any char(s))
+ */
