@@ -1,6 +1,6 @@
 {
     "name": "spacetrim",
-    "version": "0.9.14",
+    "version": "0.9.15",
     "description": "Spacetrim is trimming string from all 4 sides. It is very helpful to keep pretty code indentation without keeping a strange spaces inside a strings.",
     "private": false,
     "sideEffects": false,
