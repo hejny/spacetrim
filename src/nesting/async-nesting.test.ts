@@ -7,10 +7,28 @@ describe('how nesting works', () => {
             spaceTrim(
                 async (block) => `
 
-                  ${block('Hello asynchronous')}
+                    ${block('Hello asynchronous')}
 
                 `,
             ),
         ).resolves.toBe('Hello asynchronous');
+    });
+
+    it('will asynchronously nest simple values ', () => {
+        const nested = new Promise<string>((resolve) => {
+            setTimeout(() => {
+                resolve('100ms timeout');
+            }, 100);
+        });
+
+        return expect(
+            spaceTrim(
+                async (block) => `
+
+                    Hello ${block(await nested)}
+
+              `,
+            ),
+        ).resolves.toBe('Hello 100ms timeout');
     });
 });

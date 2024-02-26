@@ -28,11 +28,8 @@ export function spaceTrim(
     } else if (typeof contentOrcreateContent === 'function') {
         return spaceTrimNested(contentOrcreateContent);
     } else {
-        throw new Error(
-            spaceTrim(`
-              spaceTrim expected
-
-          `),
+        throw new TypeError(
+            `spaceTrim expected string or function as first argument, but got ${typeof contentOrcreateContent}`,
         );
     }
 }

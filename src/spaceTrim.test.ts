@@ -104,6 +104,31 @@ describe('how space trim works', () => {
         ).toBe(['Hell9', 'Space', '', '     ', '  ', 'Trim'].join('\n'));
     });
 
+    it('will fail on invalid usage', () => {
+        // Note: This is usefull for usage in javascript
+
+        for (const invalidValue of [undefined, null, 1, true, false, [], {}]) {
+            expect(() => spaceTrim(invalidValue as any)).toThrowError(
+                /expected string/,
+            );
+            expect(() => spaceTrim(invalidValue as any)).toThrowError(
+                /expected string/,
+            );
+            expect(() =>
+                spaceTrim((block) => ` ${block(invalidValue as any)} `),
+            ).toThrowError(/expected string/);
+            expect(
+                async () =>
+                    await spaceTrim(
+                        async (block) =>
+                            ` ${await Promise.resolve(
+                                block(invalidValue as any),
+                            )} `,
+                    ),
+            ).rejects.toThrowError(/expected string/);
+        }
+    });
+
     // TODO it('can space trim with tabs', () => {
     // TODO it('can space trim with \n and \r and both ', () => {
 });
