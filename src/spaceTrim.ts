@@ -6,7 +6,6 @@ import { spaceTrimSimple } from './spaceTrimSimple';
  *
  * @see https://github.com/hejny/spacetrim#usage
  */
-
 export function spaceTrim(content: string): string;
 export function spaceTrim(
     createContent: (block: (blockContent: string) => string) => string,

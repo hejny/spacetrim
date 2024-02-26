@@ -1,7 +1,11 @@
 import { verticalTrim } from './verticalTrim';
 
 /**
- * Trimming string from all 4 sides
+ * Trims string from all 4 sides
+ *
+ * Note: `spaceTrimSimple` does not support nested blocks, `spaceTrim` does
+ *
+ * @private withing the repository
  */
 export function spaceTrimSimple(content: string): string {
     // ✂️ Trimming from top and bottom

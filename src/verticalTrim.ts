@@ -1,7 +1,9 @@
 import { topTrim } from './topTrim';
 
 /**
- * verticalTrim trims given string from top and bottom
+ * Trims string from top and bottom new lines
+ *
+ * @private withing the repository
  */
 export function verticalTrim(content: string): string {
     content = topTrim(content);

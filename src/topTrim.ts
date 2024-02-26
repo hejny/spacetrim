@@ -1,21 +1,22 @@
-
 /**
- * topTrim trims given string from top
+ * Trims given string from top
+ *
+ * @private withing the repository
  */
 export function topTrim(content: string): string {
-  const linesWithContent: string[] = [];
-  let contentStarted = false;
+    const linesWithContent: string[] = [];
+    let contentStarted = false;
 
-  const lines = content.split('\n');
-  for (const line of lines) {
-    if (line.trim() !== '') {
-      contentStarted = true;
+    const lines = content.split('\n');
+    for (const line of lines) {
+        if (line.trim() !== '') {
+            contentStarted = true;
+        }
+
+        if (contentStarted) {
+            linesWithContent.push(line);
+        }
     }
 
-    if (contentStarted) {
-      linesWithContent.push(line);
-    }
-  }
-
-  return linesWithContent.join('\n');
+    return linesWithContent.join('\n');
 }
