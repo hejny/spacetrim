@@ -1,6 +1,6 @@
 {
     "name": "spacetrim",
-    "version": "0.11.5",
+    "version": "0.11.6",
     "description": "Spacetrim is trimming string from all 4 sides.",
     "private": false,
     "sideEffects": false,
