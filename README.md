@@ -11,6 +11,7 @@
 [![test](https://github.com/hejny/spacetrim/actions/workflows/test.yml/badge.svg)](https://github.com/hejny/spacetrim/actions/workflows/test.yml)
 [![Known Vulnerabilities](https://snyk.io/test/github/hejny/spacetrim/badge.svg)](https://snyk.io/test/github/hejny/spacetrim)
 [![Issues](https://img.shields.io/github/issues/hejny/spacetrim.svg?style=flat)](https://github.com/hejny/spacetrim/issues)
+[![Socket](https://socket.dev/api/badge/npm/package/spacetrim)](https://socket.dev/npm/package/spacetrim)
 
 <!--/Badges-->
 
