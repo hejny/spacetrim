@@ -7,3 +7,4 @@
 
 # NPM configuration
 .npmrc
+.early.coverage
