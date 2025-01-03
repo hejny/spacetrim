@@ -1,7 +1,5 @@
+import { describe, expect } from '@jest/globals';
 import { verticalTrim } from './verticalTrim';
-import { describe, test, expect } from '@jest/globals';
-
-
 
 // tslint:disable:no-trailing-whitespace
 describe('how vertical trim works', () => {

@@ -1,7 +1,5 @@
+import { describe, expect } from '@jest/globals';
 import { spaceTrim } from './spaceTrim';
-import { describe, test, expect } from '@jest/globals';
-
-
 
 // tslint:disable:no-trailing-whitespace
 describe('how space trim works', () => {
