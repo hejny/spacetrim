@@ -1,3 +1,4 @@
+import { describe, expect } from '@jest/globals';
 import { spaceTrim } from '../spaceTrim';
 
 // tslint:disable:no-trailing-whitespace
