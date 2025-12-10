@@ -54,6 +54,7 @@ jobs:
                   registry-url: https://registry.npmjs.org/
             - run: npm ci
             - run: npm run build
+            - run: npm config set provenance true
             - run: npm publish
 
     # publish-github:
