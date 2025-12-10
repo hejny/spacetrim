@@ -28,8 +28,8 @@
     "dependencies": {},
     "devDependencies": {
         "@rollup/plugin-typescript": "8.3.0",
-        "@types/jest": "27.0.2",
-        "jest": "27.3.1",
+        "@types/jest": "29.5.14",
+        "jest": "29.7.0",
         "rollup": "2.58.1",
         "ts-jest": "27.0.7",
         "tslib": "2.3.1",
