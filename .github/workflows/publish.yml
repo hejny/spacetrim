@@ -55,7 +55,7 @@ jobs:
             - run: npm ci
             - run: npm run build
             - run: npm config set provenance true
-            - run: npm publish
+            - run: npm publish --access public
 
     # publish-github:
     #     name: Publish on GitHub package registry
