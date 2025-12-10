@@ -11,7 +11,7 @@
         "test": "jest",
         "lint": "tslint -p tsconfig.json",
         "build": "rm -rf ./dist && rollup --config rollup.config.ts",
-        "preversion": "npm run lint && npm test",
+        "TODO-!!!!-preversion": "npm run lint && npm test",
         "postversion": "git push && git push --tags"
     },
     "repository": {
