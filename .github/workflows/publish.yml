@@ -43,6 +43,9 @@ jobs:
         name: Publish on NPM package registry
         needs: release
         runs-on: ubuntu-latest
+        permissions:
+            id-token: write
+            contents: read
         steps:
             - uses: actions/checkout@v4
             - uses: actions/setup-node@v4
@@ -52,8 +55,6 @@ jobs:
             - run: npm ci
             - run: npm run build
             - run: npm publish --provenance --access public
-              env:
-                  NODE_AUTH_TOKEN: ${{secrets.NPM_TOKEN}}
 
     # publish-github:
     #     name: Publish on GitHub package registry
